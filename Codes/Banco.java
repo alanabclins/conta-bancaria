@@ -20,6 +20,15 @@ public class Banco {
         System.out.println("3- Sacar");
         System.out.println("4- Consultar saldo");
     }
+    public static void dias(){
+        System.out.println("1-Domingo");
+        System.out.println("2-Segunda");
+        System.out.println("3-Terça");
+        System.out.println("4-Quarta");
+        System.out.println("5-Quinta");
+        System.out.println("6-Sexta");
+        System.out.println("7-Sábado");
+    }
 
     public static void main(String[] args) {
 
@@ -38,7 +47,12 @@ public class Banco {
         String nome = null, end = null;
         double saldo = 0, value;
         SistemaBanco conta = new SistemaBanco(ag, num, nome, cpf, end, saldo);
-        System.out.println("Bem-vindo ao banco");
+        System.out.println("Bem-vindo ao banco, qual o dia da semana?");
+        int dia =s.nextInt();
+        if(dia==1||dia==7){
+            System.out.println("Banco fechado.");
+        }
+
         while (cont > 0) {
             System.out.println("Qual sua opção");
             menu();
