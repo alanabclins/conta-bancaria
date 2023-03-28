@@ -1,5 +1,4 @@
 package Codes;
-
 public class SistemaBanco {
     private int agencia;
     private int numDaConta;
